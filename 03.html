@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Возраст</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      let age = prompt('Сколько Вам лет?', '');
+      function showAge(age) {
+        let message;
+        switch (true) {
+          case (age < 18):
+            message = 'Приветствую тебя дитя';
+            break;
+          case (age >= 18 && age < 60):
+            message = 'Ого, какой ты взрослый';
+            break;
+          case (age >= 60):
+            message = 'Я сразу поняла, что Вы человек с большим жизненным опытом';
+            break;
+          default:
+            message = 'Вы не ввели возраст';
+        }
+        document.write(message);
+      }
+      showAge(age);
+    </script>
+  </body>
+</html>
